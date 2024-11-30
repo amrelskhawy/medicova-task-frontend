@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface ICardProps {
-    children : JSX.Element[]
+    children : JSX.Element[] | JSX.Element | any
 }
 
 const Card = ({children}: ICardProps) => {
