@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        main: "#2EAE7D"
+      },
       fontFamily: {
         ClashDisplay: ["ClashDisplay"]
       }
