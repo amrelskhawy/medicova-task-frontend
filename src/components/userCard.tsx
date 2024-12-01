@@ -8,7 +8,7 @@ export const UserCard = () => {
 		<Card>
 			{/* Photo Wrapper */}
 			<div className="relative w-full h-32 ">
-				<Image fill src={"/Header-Photo.png"} alt="header photo" />
+				<Image className='object-cover' fill src={"/Header-Photo.png"} alt="header photo" />
 			</div>
 
 			{/* User Info */}
