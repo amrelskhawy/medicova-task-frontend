@@ -11,3 +11,7 @@
 body {
   background-color: #F8F8FD;
 }
+
+.icon {
+  @apply border cursor-pointer text-main h-10 w-10 p-[6px]; 
+}
