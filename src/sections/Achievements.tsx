@@ -17,7 +17,7 @@ const Achievements = () => {
           <Image width={185} height={100} src={'/acheiviments.png'} alt="achievements section Preview" />
 
           <p className="text-lg text-main font-medium">
-          Sports, patents, publications, awards, books etc.
+            Sports, patents, publications, awards, books etc.
           </p>
 
           <Button
