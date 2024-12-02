@@ -1,10 +1,10 @@
 import Sidebar from "@/components/Sidebar";
-import Image from "next/image";
-import localFont from 'next/font/local'
 import { clsx } from "clsx"
 import { UserCard } from "@/components/userCard";
 import Card from "@/components/Card";
-
+import Education from "@/components/Education";
+import Experiences from "@/components/Experience";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -22,6 +22,9 @@ export default function Home() {
 
           {/* User Card Component */}
           <UserCard />
+
+          {/* About me Card */}
+
           <Card>
             <div className="p-4 grid gap-2">
               <h3 className="font-medium text-xl mb-4">About Me</h3>
@@ -32,6 +35,18 @@ export default function Home() {
             </div>
 
           </Card>
+
+          {/* Educations */}
+          
+          <Education />
+
+          {/* Experience */}
+          
+          <Experiences />
+
+          <Skills />
+
+
         </div>
         <div>additional</div>
       </div>
