@@ -1,12 +1,15 @@
 import React from 'react'
-
+import clsx from "clsx"
 interface ICardProps {
-    children : JSX.Element[] | JSX.Element | any
+    children : JSX.Element[] | JSX.Element | any,
+    className?: string
 }
 
-const Card = ({children}: ICardProps) => {
+const Card = ({children, className}: ICardProps) => {
   return (
-    <div className='bg-white relative border'>{children}</div>
+    <div className={clsx(
+      'bg-white relative border', className
+    )}>{children}</div>
   )
 }
 
