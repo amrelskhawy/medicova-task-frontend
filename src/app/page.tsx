@@ -7,13 +7,14 @@ import Experiences from "@/sections/Experience";
 import Skills from "@/sections/Skills";
 import Activites from "@/sections/Activites";
 import Achievements from "@/sections/Achievements";
+import ProfilePreferences from "@/components/ProfilePreferences";
 
 export default function Home() {
   return (
     <>
       <div style={{
-        gridTemplateColumns: "280px 1fr 250px"
-      }} className="wrapper grid gap-4 ">
+        gridTemplateColumns: "250px 1fr 330px"
+      }} className="grid gap-4 p-3">
         <div>
           <Sidebar />
         </div>
@@ -59,7 +60,9 @@ export default function Home() {
 
 
         </div>
-        <div>additional</div>
+        <div>
+          <ProfilePreferences />
+        </div>
       </div>
     </>
   );
