@@ -2,9 +2,11 @@ import Sidebar from "@/components/Sidebar";
 import { clsx } from "clsx"
 import { UserCard } from "@/components/userCard";
 import Card from "@/components/Card";
-import Education from "@/components/Education";
-import Experiences from "@/components/Experience";
-import Skills from "@/components/Skills";
+import Education from "@/sections/Education";
+import Experiences from "@/sections/Experience";
+import Skills from "@/sections/Skills";
+import Activites from "@/sections/Activites";
+import Achievements from "@/sections/Achievements";
 
 export default function Home() {
   return (
@@ -17,13 +19,12 @@ export default function Home() {
         </div>
         <div className="py-3 grid gap-3">
 
-          {/* Used the local font in header with using clsx library to dynamic the style */}
           <h2 className={clsx("text-2xl my-10 font-ClashDisplay font-medium")}>My Profile</h2>
 
-          {/* User Card Component */}
+          {/* UserCard Section */}
           <UserCard />
 
-          {/* About me Card */}
+          {/* About me Section */}
 
           <Card>
             <div className="p-4 grid gap-2">
@@ -36,15 +37,25 @@ export default function Home() {
 
           </Card>
 
-          {/* Educations */}
+          {/* Educations Section */}
           
           <Education />
 
-          {/* Experience */}
+          {/* Experience Section */}
           
           <Experiences />
 
+          {/* Skills Section */}
+
           <Skills />
+
+          {/* Activites Section */}
+
+          <Activites />
+
+           {/* Achievements Section */}
+
+          <Achievements />
 
 
         </div>
