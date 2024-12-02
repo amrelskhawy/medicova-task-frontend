@@ -38,7 +38,7 @@ const Education = () => {
         <div className='grid gap-6'>
           {
             educationHistory.map((education) => (
-              <EducationCard {...education} />
+              <EducationCard key={education.university} {...education} />
             ))
           }
 
