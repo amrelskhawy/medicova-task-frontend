@@ -1,7 +1,7 @@
 import Image from "next/image"
 import AddIcon from '@mui/icons-material/Add';
-import Card from "./Card";
-import Button from "./Button";
+import Card from "../components/Card";
+import Button from "../components/Button";
 
 const Experiences = () => {
   return (

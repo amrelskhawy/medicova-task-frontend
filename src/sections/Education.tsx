@@ -1,7 +1,7 @@
 import React from 'react'
-import Card from './Card'
+import Card from '../components/Card'
 import AddIcon from '@mui/icons-material/Add';
-import EducationCard from './EducationCard';
+import EducationCard from '../components/EducationCard';
 import { IEducation } from '@/interfaces/education.interface';
 
 
