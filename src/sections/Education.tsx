@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import Card from '../components/Card'
 import AddIcon from '@mui/icons-material/Add';
 import EducationCard from '../components/EducationCard';
@@ -42,12 +42,13 @@ const Education = () => {
               const isLast = index + 1 === educationHistory.length
 
                 return (
-                  <><EducationCard
-                    key={education.university}
+                  <Fragment key={education.university} >
+                    <EducationCard
+
                     {...education} // Spread the education object to pass its properties
                   />
                     {!isLast && <hr className={"block h-[1px] my-4 w-full bg-gray-400"}/>}
-                  </>
+                  </Fragment>
                 )
               }
             )

@@ -1,38 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Full-Page Responsive Web Application
+
+This project is a web page built using **Next.js**, **TypeScript**, **Material UI**, and **Tailwind CSS**. The design is fully responsive and follows a full-page layout to ensure compatibility across different devices. The goal of this project is to demonstrate best practices and the use of common standards in web development.
+
+## Table of Contents
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Screenshots](#screenshots)
+- [Additional Notes](#additional-notes)
+- [Contributing](#contributing)
+
+## Technologies Used
+
+- **Next.js** (Version 14.2.5) for building the React application.
+- **TypeScript** for type safety and better developer experience.
+- **Material UI** (Version 5.16.7) for UI components.
+- **Tailwind CSS** (Version 3.4.15) for utility-first CSS framework.
+- **React** for building components.
 
 ## Getting Started
 
-First, run the development server:
+Follow the instructions below to set up and run this project on your local machine.
+
+### Prerequisites
+
+Before you begin, ensure that you have the following software installed:
+
+- **Node.js** (Version 14.x or above) – [Download Node.js](https://nodejs.org/)
+- **npm** or **Yarn** – Package managers for JavaScript
+
+To verify that Node.js and npm are installed, run the following commands in your terminal:
 
 ```bash
+# to install dependencies
+npm install
+```
+### to run the app after installing the dependencies
+```bash
+# to run the application
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Screenshots from live demo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-"# medicova-task-frontend" 
-"# medicova-task-frontend" 
+### 1. Desktop Version
