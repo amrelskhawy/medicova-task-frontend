@@ -40,3 +40,12 @@ body {
   }
 
 }
+@media (max-width: 720px) {
+
+.user-info {
+  padding-left: 1rem;
+  padding-top: 5rem;
+}
+
+}
+
