@@ -18,6 +18,8 @@ import Image from "next/image";
 import MenuIcon from '@mui/icons-material/Menu';
 import {useState,useEffect} from "react";
 
+import NotificationIcon from "../../public/icons/notifications.svg"
+
 export default function Home() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -105,7 +107,7 @@ export default function Home() {
             <div className={"flex justify-between items-center"}>
               <Button variant={"secondary"} title={"Back to homepage"} />
               <Image
-                src={"/icons/notifications.svg"}
+                src={NotificationIcon}
                 width={40}
                 height={40}
                 alt=" notifications Logo"

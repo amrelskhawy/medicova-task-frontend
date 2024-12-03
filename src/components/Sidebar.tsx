@@ -7,6 +7,7 @@ import Link from "next/link"
 import { Stack } from "@mui/material"
 
 import Logo from "../../public/logo.png"
+import LoggedUser from "../../public/logged-user.png.png"
 import HomeIcon from "../../public/icons/home.svg"
 import HelpCenterIcon from "../../public/icons/help-center.svg"
 import InfoIcon from "../../public/icons/info.svg"
@@ -157,7 +158,7 @@ const Sidebar = () => {
 
 			<div className={"flex mb-6 gap-4"}>
 						<Image
-						src={"/logged-user.png"}
+						src={LoggedUser}
 						width={30}
 						height={30}
 						alt={"Logged user"}
