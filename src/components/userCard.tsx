@@ -1,29 +1,29 @@
-import { Button } from '@mui/material'
+import Button from "./Button"
 import Image from 'next/image'
 import React from 'react'
 import Card from './Card'
+import OutlinedFlagIcon from '@mui/icons-material/OutlinedFlag';
+import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 
 export const UserCard = () => {
 	return (
-		<Card>
+		<Card className={""}>
 			{/* Photo Wrapper */}
 			<div className="relative w-full h-32 ">
 				<Image className='object-cover' fill src={"/Header-Photo.png"} alt="header photo" />
 			</div>
 
 			{/* User Info */}
-			<div className='p-4 pl-36 grid gap-2 font-medium text-gray-400'>
+			<div className='p-4 user-info  pl-36 grid gap-2 font-medium text-gray-400'>
 				<h3 className='font-ClashDisplay text-xl font-bold text-[#185D43]'>Jake Gyll</h3>
 				<p>Medical Ambassador at <span className='text-gray-600'>PL Hospital</span></p>
 				<p>
-					<span></span>
+					<span className={"mr-1"}><PlaceOutlinedIcon /> </span>
 					Cairo, Eqypt
 				</p>
 
-				<Button className='bg-[#56CDAD]/10 hover:border-none outline-none border-none font-medium text-[#56CDAD] w-fit' variant="outlined">
-					<span></span>
-					OPEN FOR OPPORTUNITIES
-				</Button>
+				<Button title={"OPEN FOR OPPORTUNITIES"} icon={<OutlinedFlagIcon />} variant={"secondary"} className='bg-[#56CDAD]/10 hover:border-none outline-none border-none font-medium text-[#56CDAD] w-fit' />
+
 			</div>
 
 
@@ -34,9 +34,7 @@ export const UserCard = () => {
 
 			{/* Add Buttom to Edit Profile */}
 
-			<Button className='border-[#185D43]/20 text-[#185D43] p-3 font-bold absolute top-36 right-4' variant='outlined' >
-				Edit Profile
-			</Button>
+			<Button title={"Edit Profile"} className='border-[#185D43]/20 text-[#185D43] p-3 font-bold absolute top-36 right-4' variant='secondary' />
 		</Card>
 	)
 }
