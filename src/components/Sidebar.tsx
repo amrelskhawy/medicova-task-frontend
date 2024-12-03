@@ -7,7 +7,7 @@ import Link from "next/link"
 import { Stack } from "@mui/material"
 
 import Logo from "../../public/logo.png"
-import LoggedUser from "../../public/logged-user.png.png"
+import LoggedUser from "../../public/logged-user.png"
 import HomeIcon from "../../public/icons/home.svg"
 import HelpCenterIcon from "../../public/icons/help-center.svg"
 import InfoIcon from "../../public/icons/info.svg"
