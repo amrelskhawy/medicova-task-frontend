@@ -4,13 +4,15 @@ import AddIcon from '@mui/icons-material/Add';
 import EducationCard from '../components/EducationCard';
 import { IEducation } from '@/interfaces/education.interface';
 
+import HarvardImage from "../../public/harvard-logo.png"
+import TorontoImage from "../../public/toronto-logo.png"
 
 const Education = () => {
 
   const educationHistory: IEducation[] = [
     {
       university: "Harvard University",
-      universityImage: "/harvard-logo.png",
+      universityImage: HarvardImage,
       degree: "Postgraduate degree, Applied Psychology",
       start_year: 2010,
       end_year: 2012,
@@ -18,7 +20,7 @@ const Education = () => {
     },
     {
       university: "University of Toronto",
-      universityImage: "/toronto-logo.png",
+      universityImage: TorontoImage,
       degree: "Bachelor of Arts, Visual Communication",
       start_year: 2005,
       end_year: 2009,

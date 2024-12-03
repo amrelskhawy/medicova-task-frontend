@@ -5,12 +5,15 @@ import Card from './Card'
 import OutlinedFlagIcon from '@mui/icons-material/OutlinedFlag';
 import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 
+import UserBackground from "../../public/Header-Photo.png"
+import UserPic from "../../public/user-img.png"
+
 export const UserCard = () => {
 	return (
 		<Card className={""}>
 			{/* Photo Wrapper */}
 			<div className="relative w-full h-32 ">
-				<Image className='object-cover' fill src={"/Header-Photo.png"} alt="header photo" />
+				<Image className='object-cover' fill src={UserBackground} alt="header photo" />
 			</div>
 
 			{/* User Info */}
@@ -29,7 +32,7 @@ export const UserCard = () => {
 
 			{/* User Profile image */}
 			<div className='bg-slate-300 rounded-full top-20 left-7 outline outline-8 outline-white shadow-lg shadow-slate-900/50 w-fit overflow-hidden absolute'>
-				<Image width={100} height={100} src={"/user-img.png"} alt='user-img'/>
+				<Image width={100} height={100} src={UserPic} alt='user-img'/>
 			</div>
 
 			{/* Add Buttom to Edit Profile */}

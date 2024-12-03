@@ -5,6 +5,8 @@ import React from 'react'
 import AddIcon from '@mui/icons-material/Add';
 import { Stack } from '@mui/material';
 
+import ActivitesSectionImage from "../../public/student-activites-section.png"
+
 
 const Activites = () => {
   return (
@@ -15,7 +17,7 @@ const Activites = () => {
         </div>
 
         <Stack spacing={2} className='justify-center items-center'>
-          <Image width={185} height={100} src={'/student-activites-section.png'} alt="Experience Preview" />
+          <Image width={185} height={100} src={ActivitesSectionImage} alt="Experience Preview" />
 
           <p className="text-lg text-main font-medium">
             Add and stand out to get more opportunities tailored to your preferences.

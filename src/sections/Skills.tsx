@@ -5,6 +5,8 @@ import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 
+
+
 const Skills = () => {
 
 	const skills = ["Communication", "Analytics", "Facebook Ads", "Content Planning",

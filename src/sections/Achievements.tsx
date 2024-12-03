@@ -5,6 +5,8 @@ import React from 'react'
 import AddIcon from '@mui/icons-material/Add';
 import { Stack } from '@mui/material';
 
+import AchievementsSectionImage from "../../public/acheiviments.png"
+
 
 const Achievements = () => {
   return (
@@ -15,7 +17,7 @@ const Achievements = () => {
         </div>
 
         <Stack spacing={2} className='justify-center items-center'>
-          <Image width={185} height={100} src={'/acheiviments.png'} alt="achievements section Preview" />
+          <Image width={185} height={100} src={AchievementsSectionImage} alt="achievements section Preview" />
 
           <p className="text-lg text-main font-medium">
             Sports, patents, publications, awards, books etc.

@@ -4,6 +4,8 @@ import Card from "../components/Card";
 import Button from "../components/Button";
 import { Stack } from "@mui/material";
 
+import ExperienceSectionImage from "../../public/experience-preview.png"
+
 const Experiences = () => {
   return (
     <Card>
@@ -14,7 +16,7 @@ const Experiences = () => {
         </div>
 
         <Stack spacing={2} className='justify-center items-center'>
-          <Image width={185} height={100} src={'/experience-preview.png'} alt="Experience Preview" />
+          <Image width={185} height={100} src={ExperienceSectionImage} alt="Experience Preview" />
 
           <p className="text-lg text-main font-medium">
             Add and stand out to get more opportunities tailored to your preferences.

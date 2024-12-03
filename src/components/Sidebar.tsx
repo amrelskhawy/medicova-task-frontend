@@ -6,6 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Stack } from "@mui/material"
 
+import Logo from "../../public/logo.png"
 import HomeIcon from "../../public/icons/home.svg"
 import HelpCenterIcon from "../../public/icons/help-center.svg"
 import InfoIcon from "../../public/icons/info.svg"
@@ -78,7 +79,7 @@ const Sidebar = () => {
 			{/* Sidebar Logo */}
 			<div>
 				<Image
-					src={"/logo.png"}
+					src={Logo}
 					width={120}
 					height={120}
 					alt="Logo"
