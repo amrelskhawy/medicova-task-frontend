@@ -8,7 +8,7 @@ interface ICardProps {
 const Card = ({children, className}: ICardProps) => {
   return (
     <div className={clsx(
-      'bg-white relative border', className
+      'bg-white relative border h-fit', className
     )}>{children}</div>
   )
 }

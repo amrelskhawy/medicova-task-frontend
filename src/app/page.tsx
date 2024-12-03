@@ -1,3 +1,4 @@
+"use client"
 import Sidebar from "@/components/Sidebar";
 import { clsx } from "clsx"
 import { UserCard } from "@/components/userCard";
@@ -8,19 +9,57 @@ import Skills from "@/sections/Skills";
 import Activites from "@/sections/Activites";
 import Achievements from "@/sections/Achievements";
 import ProfilePreferences from "@/components/ProfilePreferences";
+import {Drawer, Stack} from "@mui/material";
+import { ResumeUpload } from "@/components/ResumeUpload";
+import AdditionalDetail from "@/components/AdditionalDetail";
+import Languages from "@/components/Languages";
+import Button from "@/components/Button";
+import Image from "next/image";
+import MenuIcon from '@mui/icons-material/Menu';
+import {useState,useEffect} from "react";
 
 export default function Home() {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Set isMobile to true if the screen width is less than or equal to 768px (mobile size)
+      setIsMobile(window.innerWidth <= 1280);
+    };
+
+    // Listen to window resize event
+    window.addEventListener('resize', handleResize);
+
+    // Initial check for screen size
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
-      <div style={{
-        gridTemplateColumns: "250px 1fr 330px"
-      }} className="grid gap-4 p-3">
-        <div>
+      <div className="home-layout">
+        {/* Drawer for Desktop */}
+        <Drawer
+          variant="persistent"
+          className={"bg-white"}
+          open={!isMobile || isOpen} // Always open on desktop, toggle on mobile
+        >
           <Sidebar />
-        </div>
-        <div className="py-3 grid gap-3">
+        </Drawer>
 
-          <h2 className={clsx("text-2xl my-10 font-ClashDisplay font-medium")}>My Profile</h2>
+
+        <div className="py-3 mx-auto flex flex-col xl:p-0 p-4 gap-3">
+
+          <div className={"flex justify-between items-center"}>
+
+            <h2 className={clsx("text-2xl my-10 font-ClashDisplay font-medium")}>My Profile</h2>
+            <MenuIcon onClick={() => setIsOpen(prev => !prev)} className={"hidden max-xl:block rounded-full  w-10 h-10 bg-white p-1"}/>
+          </div>
 
           {/* UserCard Section */}
           <UserCard />
@@ -39,11 +78,11 @@ export default function Home() {
           </Card>
 
           {/* Educations Section */}
-          
+
           <Education />
 
           {/* Experience Section */}
-          
+
           <Experiences />
 
           {/* Skills Section */}
@@ -60,8 +99,27 @@ export default function Home() {
 
 
         </div>
-        <div>
-          <ProfilePreferences />
+        <div className={"mt-12 lg:p-0 p-4 relative"} >
+          <Stack spacing={1}>
+
+            <div className={"flex justify-between items-center"}>
+              <Button variant={"secondary"} title={"Back to homepage"} />
+              <Image
+                src={"/icons/notifications.svg"}
+                width={40}
+                height={40}
+                alt=" notifications Logo"
+                className="bg-white p-[8px] rounded-full"
+              />
+
+            </div>
+
+
+            <ProfilePreferences />
+            <ResumeUpload />
+            <AdditionalDetail />
+            <Languages />
+          </Stack>
         </div>
       </div>
     </>

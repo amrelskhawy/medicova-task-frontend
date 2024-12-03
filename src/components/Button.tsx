@@ -17,7 +17,9 @@ const Button = ({
   return (
     <button
       className={clsx(
-        `outline-none border-none  bg-gradient-to-b from-[#2EAE7D]  to-[#134834] h-12 p-1 px-4 text-white w-fit flex items-center justify-center`,
+        variant === "primary" && "bg-gradient-to-b from-[#2EAE7D] to-[#134834] text-white",
+        variant === "secondary" && "border text-main",
+        `outline-none  h-12 p-1 px-4  w-fit flex items-center justify-center`,
         className
       )}>
         <span className='inline-block mr-2'>{icon}</span>

@@ -21,7 +21,7 @@ const Skills = () => {
 
 			</div>
 
-			<Stack className='my-2 mt-8' direction="row" spacing={1}>
+			<Stack className='skills-wrapper' direction="row" spacing={1}>
 				{skills.map(skill =>
 					<Chip key={skill} label={skill} className='rounded-none p-1 text-main bg-main/10  text-[1.2rem]' />
 				)}

@@ -5,7 +5,7 @@ import Card from './Card';
 
 const ProfilePreferences = () => {
   return (
-    <Card className="p-4">
+    <Card className="p-4 ">
       <h3 className="text-lg text-main font-bold">Your Public Profile</h3>
 
       <ul>

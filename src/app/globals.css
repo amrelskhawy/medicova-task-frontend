@@ -15,3 +15,28 @@ body {
 .icon {
   @apply border cursor-pointer text-main h-10 w-10 p-[6px]; 
 }
+
+.home-layout {
+  @apply grid gap-4;
+
+  grid-template-columns: 230px 1fr 330px;
+}
+
+
+.skills-wrapper{
+  @apply my-2 mt-8 flex gap-y-4 gap-x-2 flex-wrap;
+}
+
+@media (max-width: 1280px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .skills-wrapper{
+   flex-wrap: wrap !important;
+  }
+
+}
