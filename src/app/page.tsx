@@ -99,7 +99,7 @@ export default function Home() {
 
 
         </div>
-        <div className={"mt-12 lg:p-0 p-4 relative"} >
+        <div className={"xl:mt-12 mt-0 xl:p-0 p-4 relative"} >
           <Stack spacing={1}>
 
             <div className={"flex justify-between items-center"}>

@@ -37,12 +37,23 @@ const Education = () => {
 
         <div className='grid gap-6'>
           {
-            educationHistory.map((education) => (
-              <EducationCard key={education.university} {...education} />
-            ))
+            educationHistory.map((education, index) => {
+
+              const isLast = index + 1 === educationHistory.length
+
+                return (
+                  <><EducationCard
+                    key={education.university}
+                    {...education} // Spread the education object to pass its properties
+                  />
+                    {!isLast && <hr className={"block h-[1px] my-4 w-full bg-gray-400"}/>}
+                  </>
+                )
+              }
+            )
           }
 
-          <p className='text-center font-bold text-main text-lg pb-1'>Show 2 more educations</p>
+          <p className='text-center font-bold text-main text-lg mt-4 pb-1'>Show 2 more educations</p>
         </div>
 
 
