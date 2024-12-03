@@ -3,6 +3,7 @@ import Card from '@/components/Card'
 import Image from 'next/image'
 import React from 'react'
 import AddIcon from '@mui/icons-material/Add';
+import { Stack } from '@mui/material';
 
 
 const Achievements = () => {
@@ -13,7 +14,7 @@ const Achievements = () => {
           <h3 className="font-medium text-xl text-main">Achievements</h3>
         </div>
 
-        <div className="no-experience-added flex justify-center items-center flex-col gap-4">
+        <Stack spacing={2} className='justify-center items-center'>
           <Image width={185} height={100} src={'/acheiviments.png'} alt="achievements section Preview" />
 
           <p className="text-lg text-main font-medium">
@@ -26,7 +27,7 @@ const Achievements = () => {
             variant="primary"
             icon={<AddIcon />}
           />
-        </div>
+        </Stack>
 
 
       </div>
