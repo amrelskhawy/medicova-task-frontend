@@ -12,6 +12,16 @@ import WebsiteIcon from "../../public/icons/website.svg"
 import { Stack } from '@mui/material';
 import Image from 'next/image';
 
+interface ISocialLink {
+  icon: string;  // Assuming the icon is a URL or string for the icon component
+  value: string | string[];  // The value could be a single string or an array of strings
+}
+
+// Define the type for the socialLinks object
+interface ISocialLinks {
+  [key: string]: ISocialLink;
+}
+
 const AdditionalDetail = () => {
 
   const additonalDetails = {
@@ -30,7 +40,7 @@ const AdditionalDetail = () => {
 
   }
 
-  const socailLinks: any = {
+  const SocialLinks: ISocialLinks = {
     instagram: {
       icon: InstagramIcon,
       value: "instagram.com/jakegyll"
@@ -76,7 +86,7 @@ const AdditionalDetail = () => {
 
             {/* Social Links Wrapper */}
             <Stack>
-              {Object.entries(socailLinks).map(([key, { icon, value }]) => (
+              {Object.entries(SocialLinks).map(([key, { icon, value }]) => (
                 <div key={key} className='additional-card flex gap-4 mt-4'>
                   {/* {icon && icon} Render icon if it exists */}
 
