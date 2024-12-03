@@ -2,14 +2,15 @@
 
 This project is a web page built using **Next.js**, **TypeScript**, **Material UI**, and **Tailwind CSS**. The design is fully responsive and follows a full-page layout to ensure compatibility across different devices. The goal of this project is to demonstrate best practices and the use of common standards in web development.
 
+### Live Demo : [Click here](https://amrelskhawy.github.io/medicova-task-frontend/)
+
+
 ## Table of Contents
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Screenshots](#screenshots)
-- [Additional Notes](#additional-notes)
-- [Contributing](#contributing)
 
 ## Technologies Used
 
@@ -46,3 +47,9 @@ npm run dev
 ## Screenshots from live demo
 
 ### 1. Desktop Version
+![Desktop-1](./screenshots/desktop-1.png)
+![Desktop-2](./screenshots/desktop-2.png)
+
+### 2. Mobile and tablets Version
+
+![Mobile Version](./screenshots/responsive.png)
